@@ -2,37 +2,37 @@ let log = console.log;
 // String Methods
 
 // 01. length Property
-let str = 'CodeBustler Coder ';
-log(str.length); // 11
+let string = 'CodeBustler Coder ';
+log(string.length); // 11
 
 // 02. includes(searchValue, startIndex) | Returns Boolean
-log(str.includes('B', 4)); // true
+log(string.includes('B', 4)); // true
 
 // 03. toUpperCase()
-log(str.toUpperCase()); // CODEBUSTLER
+log(string.toUpperCase()); // CODEBUSTLER
 
 // 04. toLowerCase()
-log(str.toLowerCase()); // codebustler
+log(string.toLowerCase()); // codebustler
 
 // 05. startsWith(searchValue, start) | Returns Boolean
-log(str.startsWith('Bus', 4)); // True
+log(string.startsWith('Bus', 4)); // True
 
 // 06. endsWith(searchValue, start) | Returns Boolean
-log(str.startsWith('Bus', 4));
+log(string.startsWith('Bus', 4));
 
 // 07. search(searchValue) | Returns first match (-1 if no match)
-// ** If the search value is a string, it is converted to a regular expression.
-log(str.search('de')); // 2
+// ** If the search value is a stringing, it is converted to a regular expression.
+log(string.search('de')); // 2
 
 // 08. match(match) | match based on regExp*
 // Returns array of info, if no match returns null*
-log(str.match(/Code/g)); // ["code", "Code"]
+log(string.match(/Code/g)); // ["code", "Code"]
 
 // 09. indexOf(searchvalue, start) | Retuns index (first occurence)
-log(str.indexOf('ode')); //1
+log(string.indexOf('ode')); //1
 
 // 10. lastIndexOf() | Retuns index (*last occurence)
-log(str.lastIndexOf('ode')); //13
+log(string.lastIndexOf('ode')); //13
 
 // 11. trim() | Removes whitespace from both ends of a string.
 let strSpace = ' code bustler ';
@@ -51,11 +51,11 @@ log(strSpace.length); // 14 (With End Space)
 log(trimStart.length); // 13 (Without End Space)
 
 // 14. at(index) | Returns indexed single character | ES12(2021)
-log(str.at(4) + ' | By using at()'); // B
-log(str[2]); // d | this also possible for string char
+log(string.at(4) + ' | By using at()'); // B
+log(string[2]); // d | this also possible for string char
 
 // 15. charAt(index) | Returns
-log(str.charAt(4) + ' | By using chatAt()'); // B
+log(string.charAt(4) + ' | By using chatAt()'); // B
 
 // DIFFERENCE at() & charAt
 // The at(index) method properly handles non-BMP Unicode characters and returns them as a single character, (BMP : Basic Multilingual Plane)
@@ -63,7 +63,7 @@ log(str.charAt(4) + ' | By using chatAt()'); // B
 // The charAt(index) method treats non-BMP Unicode characters as a surrogate pair and returns the first half of the surrogate pair (which is not a valid character on its own).
 
 // 16. charCodeAt(index) | Returns Unicode of the character at a specified index (position)
-log(str.charCodeAt('4')); // 66 (unicode of B)
+log(string.charCodeAt('4')); // 66 (unicode of B)
 
 //-----------------
 
@@ -113,7 +113,7 @@ log(myArray);
 // document.getElementsByTagName('h2')[0].innerHTML = myArray;
 
 // 22. repeat(count) | Returns a new string with a number of copies of a string
-let strNew = str.repeat(5);
+let strNew = string.repeat(5);
 log(strNew);
 
 // 23. slice(start, end) | Extracts a part of a string in a new string
