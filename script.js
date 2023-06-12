@@ -1,8 +1,10 @@
 let log = console.log;
+let string = 'CodeBustler';
+let string2 = 'CodeBustler Code';
+
 // String Methods
 
 // 01. length Property
-let string = 'CodeBustler';
 // log(string.length); // 11
 
 // 02. includes(searchValue, startIndex) | Returns Boolean
@@ -18,21 +20,21 @@ let string = 'CodeBustler';
 // log(string.startsWith('Bus', 4)); // True
 
 // 06. endsWith(searchValue, start) | Returns Boolean
-// log(string.endsWith('er', 11)); // true
+// log(string2.endsWith('er', 11)); // true
 
 // 07. search(searchValue) | Returns first match index (-1 if no match)
 // ** If the search value is a string, it is converted to a regular expression.
-log(string.search('de')); // 2
+// log(string.search('de')); // 2
 
 // 08. match(match) | match based on regExp*
 // Returns array of info, if no match returns null*
-// log(string.match(/Code/g)); // ["code", "Code"]
+// log(str22.match(/Code/g)); // ["code", "Code"]
 
 // 09. indexOf(searchvalue, start) | Retuns index (first occurence)
 // log(string.indexOf('ode')); //1
 
 // 10. lastIndexOf() | Retuns index (*last occurence)
-// log(string.lastIndexOf('ode')); //13
+// log(string2.lastIndexOf('ode')); //13
 
 // 11. trim() | Removes whitespace from both ends of a string.
 let strSpace = ' code bustler ';
@@ -107,13 +109,14 @@ let myNewString = myString.replaceAll(searchString, replaceString);
 //-----------------
 
 // 21.  split(separator, limit) | splits a string into an array of substrings
-let my_string = 'Hi, Good evening this is codebustler!';
-let myArray = my_string.split('');
-// log(myArray);
+// let my_string = 'Hi, Good evening this is codebustler!';
+let str = 'code ';
+// let myArray = str.split('');
+// console.table(myArray); // ["c", "o", "d", "e"]
 // document.getElementsByTagName('h2')[0].innerHTML = myArray;
 
 // 22. repeat(count) | Returns a new string with a number of copies of a string
-let strNew = string.repeat(5);
+let strNew = str.repeat(5);
 // log(strNew);
 
 // 23. slice(start, end) | Extracts a part of a string in a new string
@@ -132,7 +135,7 @@ let sliceString2 = strr.slice(-1); // r (last String)
 // log(strr.substring(12, 17)); //Coder
 
 // 25. substr(start, *length) | Extracts a part of a string
-// log(strr.substr(4, 3)); // Bustler
+log(string.substr(4, 3)); // Bustler
 
 //------------------
 
@@ -151,12 +154,13 @@ let padded2 = text3.padEnd(3, '*');
 //------------------
 
 // 28. toString() | Returns a string as a string | can be used to convert a string object into a string. ** Every JavaScript object has a toStr ing() method. Normally, you **will not use it in your own code.
-let text = 'Hello World!';
-let result = text.toString();
-// log(result); // Hello World!
+let greet = 'Hello World!';
+let result = greet.toString();
+log(result); // Hello World!
 
 // 29. valueOf()
 // This method is the default method for JavaScript strings.
 // It is used internally by JavaScript.
 // Normally, you will not use it in your code.
-// let result1 = text.valueOf(); // Hello World!
+let value = greet.valueOf(); // Hello World!
+log(value);
